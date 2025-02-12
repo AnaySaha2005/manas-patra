@@ -12,7 +12,7 @@ const Navbar = () => {
     return(<></>);
   console.log(session)
   return (
-    <nav className="bg-white bg-opacity-20 transition">
+    <nav className="bg-white bg-opacity-20 transition w-full stickey">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -23,7 +23,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-gray-500 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none "
+            className="md:hidden text-gray-500 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none m-4"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
